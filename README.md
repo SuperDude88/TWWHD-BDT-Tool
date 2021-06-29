@@ -11,6 +11,7 @@ To run the program as a python script, navigate to the folder containing the .py
 Mode can be either `extract` or `build`
 When extracting `in_path` is the path to the .bdt archive you want to extract. When building, this is the directory containing the files that you want put inside the archive.
 
+Paths should be specified as strings with "" around them.
 When extracting `out_path` is the path to the folder you want to extract to. When building, this is the directory where you want the archive to be placed.
 
 When building, `out_name` is the name of the archive to be created. If not given, it defaults to output.bdt. It is also ignored when extracting.
