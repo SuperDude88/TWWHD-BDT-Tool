@@ -24,9 +24,9 @@ As far as I have found, this type of archive is only used in TWWHD
 
 MAIN HEADER:
 
-`Offset    Size    Type      Desc`
+`Offset    Size    Type      Desc
 
-0x00      4       uint32    Number of files in the archive
+0`x00      4       uint32    Number of files in the archive
 
 0x04      ?       ???       Unknown. Always 0x00000000...
 
