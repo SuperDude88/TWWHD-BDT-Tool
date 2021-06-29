@@ -103,8 +103,8 @@ if tool_mode == "extract" or tool_mode == "e":
 elif tool_mode == "build" or tool_mode == "b":
     if os.path.isdir(in_path) and len(os.listdir(in_path)) != 0:
         if os.path.isdir(out_folder):
-            if not OutputFile.endswith(".bdt"):
-                OutputFile = OutputFile + ".bdt"
+            if not out_name.endswith(".bdt"):
+                out_name = out_name + ".bdt"
             OutputFile = open(out_folder + "/" + out_name, "wb")
 
             Main_Header = MainHeader()
