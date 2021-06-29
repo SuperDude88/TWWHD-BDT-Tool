@@ -1,5 +1,5 @@
 # TWWHD-BDT-Tool
-A tool that allows you to extract files from the .bdt file found in JAudioRes/Seqs and rebuild them back into the archive
+A tool that allows you to extract files from the .bdt archive found in JAudioRes/Seqs and rebuild them back into the archive
 
 In `content\Cafe\<game region>\AudioRes\JAudioRes\Seqs` there is a unique .bdt archive that seems to only be used in TWWHD (it's different from the similarly named archive in Dark Souls) that stores the sequenced music tracks for the game. The sequences inside the archive are all stored as .bms files, the same format used on the GameCube. Most tracks are identical with a couple exceptions.
 
