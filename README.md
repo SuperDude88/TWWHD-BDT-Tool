@@ -24,7 +24,7 @@ As far as I have found, this type of archive is only used in TWWHD
 
 MAIN HEADER:
 
-Offset    Size    Type      Desc
+`Offset    Size    Type      Desc
 
 0x00      4       uint32    Number of files in the archive
 
@@ -42,7 +42,7 @@ Offset    Size    Type      Desc
 
 0x1C      ?       ???       Unknown. Always 0x00000000...
 
-0x20    START OF CONSTITUENT FILE HEADERS/END OF MAIN HEADER
+0x20    START OF CONSTITUENT FILE HEADERS/END OF MAIN HEADER`
 
 Following the main header, there is a 0x8 byte header for each of the constituent files (as listed in the main header)
 
