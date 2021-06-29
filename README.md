@@ -6,7 +6,8 @@ In `content\Cafe\<game region>\AudioRes\JAudioRes\Seqs` there is a unique .bdt a
 The extractor places the files in a folder and names each one based on their "index" in the archive. The building process sorts them by this index so that they are in the same order as the original file (a non-numerical name, excluding the file extension, will cause it to fail). This also means that renaming files to each other will switch their positions in the file and switch the tracks in the game. This does work, but has issues with loaded/unloaded banks the same way the music randomizer for the original WW does.
 
 # Usage
-To run the program as a python script, navigate to the folder containing the .py file and run `TWWHD_BDT_Extractor.py <mode> <in_path> <out_path> <out_name [optional]>`
+To run the precompiled .exe, navigate to the folder containing the executable and run `BDTTool.py <mode> <in_path> <out_path> <out_name [optional]>`
+To run the program as a python script, navigate to the folder containing the .py file and run `TWWHD_BDT_Tool.py <mode> <in_path> <out_path> <out_name [optional]>`
 
 Mode can be either `extract` or `build`
 When extracting `in_path` is the path to the .bdt archive you want to extract. When building, this is the directory containing the files that you want put inside the archive.
