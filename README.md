@@ -43,33 +43,40 @@ Offset    Size    Type      Desc
 
 0x1C      ?       ???       Unknown. Always 0x00000000...
 
-0x20    START OF CONSTITUENT FILE HEADERS/END OF MAIN HEADER```
+0x20    START OF CONSTITUENT FILE HEADERS/END OF MAIN HEADER
+```
 
 Following the main header, there is a 0x8 byte header for each of the constituent files (as listed in the main header)
 
-
+```
 Offset    Size    Type    Desc
 
 0x00    4    uint32    Offset to beginning of constituent file (relative to the start of the archive)
 
 0x04    4    uint32    Length of the constituent file
+```
 
 These smaller headers are placed continuously in a row following the main header. For example:
 
 A .bdt with 3 files would have a main header like this (in hex):
 
+```
 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00
 
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+```
 
 If each file was 0x34 bytes long, the collection of individual file headers would look like this:
 
+```
 00 00 00 38 00 00 00 34 00 00 00 6C 00 00 00 34
 
 00 00 00 A0 00 00 00 34 <file data here>
+```
 
 Together, the file would look like:
 
+```
 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00
 
 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
@@ -77,3 +84,4 @@ Together, the file would look like:
 00 00 00 38 00 00 00 34 00 00 00 6C 00 00 00 34
 
 00 00 00 A0 00 00 00 34 <file data here>
+```
